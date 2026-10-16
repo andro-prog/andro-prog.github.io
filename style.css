@@ -247,6 +247,7 @@ body.dark-mode .delete-task-btn:hover {
     border-color: #1b4d3e;
     background:rgba(27, 77, 62, 0.1);
     box-shadow:  0 0 15px rgba(27, 77, 62, 0.25);
+    transform: perspective(400px) translateY(-4px) rotateX(8deg);
 
 }
 
