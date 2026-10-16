@@ -1,4 +1,4 @@
-@import url('https://googleapis.com');
+
 
 * {
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f4f6f8;
+    background: linear-gradient(135deg, #7f65a7 10%, #001cf3 60%, #7700ff 40%);
     color: #333333;
     height: 100vh;
     overflow: hidden;
@@ -17,12 +17,14 @@ body {
     display: grid;
     grid-template-columns: 260px 1fr 340px;
     height: 100vh;
-    background-color: #ffffff;
+    background:transparent;
 }
 
 .sidebar-panel {
-    background-color: #f8f9fa;
-    border-right: 1px solid #e9ecef;
+    background: rgba(248, 249, 250, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(233, 236, 239, 0.3);
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -173,7 +175,9 @@ body.dark-mode .delete-task-btn:hover {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
 
 .calendar-header {
@@ -228,10 +232,10 @@ body.dark-mode .delete-task-btn:hover {
 }
 
 .day-cell {
-    border: 1px solid #e9ecef;
+    border: 1px solid rgba(233, 236, 239, 0.5);
     border-radius: 8px;
     padding: 10px;
-    background-color: #ffffff;
+    background:rgba(255 , 255, 255, 0.5);
     cursor: pointer;
     font-weight: 500;
     color: #495057;
@@ -241,7 +245,9 @@ body.dark-mode .delete-task-btn:hover {
 
 .day-cell:hover {
     border-color: #1b4d3e;
-    background-color: #f8f9fa;
+    background:rgba(27, 77, 62, 0.1);
+    box-shadow:  0 0 15px rgba(27, 77, 62, 0.25);
+
 }
 
 .day-cell.selected {
@@ -251,8 +257,10 @@ body.dark-mode .delete-task-btn:hover {
 }
 
 .form-panel {
-    background-color: #ffffff;
-    border-left: 1px solid #e9ecef;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-left: 1px solid rgba(233, 236, 239, 0.2);
     padding: 24px;
     display: flex;
     flex-direction: column;
