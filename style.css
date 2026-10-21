@@ -589,3 +589,7 @@ body.dark-mode .setting-select {
         font-size: 0.85rem;
     }
 }
+
+.link-item {
+    text-decoration: none;
+}
